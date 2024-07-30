@@ -7,7 +7,8 @@ import { io } from "socket.io-client";
 import { ChatMessageType } from "../../features/chat";
 
 export default function SendChatMessage() {
-  const socket = io(`ws://${import.meta.env.VITE_WS_SERVER}`);
+  const protocol = window.location.protocol === "https:" ? "wss" : "ws";
+  const socket = io(`${protocol}://${import.meta.env.VITE_WS_SERVER}`);
   const [input, setInput] = createSignal("");
 
   onMount(() => {
