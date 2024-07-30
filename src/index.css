@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: #000;
+  background-color: #f1f4f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* width */
+::-webkit-scrollbar {
+  /* width: 10px; */
+  display: none;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #f1f4f9;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #f1f4f9;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #f1f4f9;
+} */
