@@ -71,7 +71,7 @@ export default function ChatCard() {
       }
     >
       <div
-        class="h-[calc(100vh-125px)] overflow-y-auto px-2 lg:px-0"
+        class="h-[calc(100vh-180px)] lg:h-[calc(100vh-125px)] overflow-y-auto px-2 lg:px-0"
         ref={chatCardContainer}
       >
         <div class="flex items-center gap-4 mb-2">
