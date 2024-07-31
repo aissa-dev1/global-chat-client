@@ -23,7 +23,7 @@ export default function SendChatMessage() {
     store.chat.addMessage(text);
   }
 
-  function sendMessage() {
+  async function sendMessage() {
     if (!input()) return;
 
     socket.emit("message", {
